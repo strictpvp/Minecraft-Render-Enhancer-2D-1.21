@@ -21,48 +21,48 @@ public final class MinecraftRenderEnhancer implements ModInitializer {
         Matrix4f matrix = context.getMatrices().peek().getPositionMatrix();
       
         BuiltRectangle rectangle = Builder.rectangle()
-          .size(new SizeState(70, 70))
-          .color(new QuadColorState(Color.GREEN, Color.GREEN, Color.RED, Color.BLACK))
-          .radius(new QuadRadiusState(6f, 0f, 20f, 35f))
-          .smoothness(3.0f)
-          .build();
+            .size(new SizeState(70, 70))
+            .color(new QuadColorState(Color.GREEN, Color.GREEN, Color.RED, Color.BLACK))
+            .radius(new QuadRadiusState(6f, 0f, 20f, 35f))
+            .smoothness(3.0f)
+            .build();
         rectangle.render(matrix, 40, 40);
       
         BuiltBorder border = Builder.border()
-          .size(new SizeState(70, 70))
-          .color(new QuadColorState(Color.WHITE, Color.BLUE, Color.WHITE, Color.BLUE))
-          .radius(new QuadRadiusState(6f, 0f, 20f, 35f))
-          .thickness(2f)
-          .smoothness(2f, 2f)
-          .build();
+            .size(new SizeState(70, 70))
+            .color(new QuadColorState(Color.WHITE, Color.BLUE, Color.WHITE, Color.BLUE))
+            .radius(new QuadRadiusState(6f, 0f, 20f, 35f))
+            .thickness(2f)
+            .smoothness(2f, 2f)
+            .build();
         border.render(matrix, 40, 130);
       
         AbstractTexture abstractTexture = MinecraftClient.getInstance().getTextureManager()
-          .getTexture(Identifier.ofVanilla("textures/entity/creeper/creeper.png"));
+            .getTexture(Identifier.ofVanilla("textures/entity/creeper/creeper.png"));
         BuiltTexture texture = Builder.texture()
-          .size(new SizeState(70, 70))
-          .radius(new QuadRadiusState(6f, 10f, 20f, 0f))
-          .texture(0.125f, 0.25f, 0.125f, 0.25f, abstractTexture)
-          .color(new QuadColorState(Color.WHITE, Color.GREEN, Color.GREEN, Color.WHITE))
-          .build();
+            .size(new SizeState(70, 70))
+            .radius(new QuadRadiusState(6f, 10f, 20f, 0f))
+            .texture(0.125f, 0.25f, 0.125f, 0.25f, abstractTexture)
+            .color(new QuadColorState(Color.WHITE, Color.GREEN, Color.GREEN, Color.WHITE))
+            .build();
         texture.render(matrix, 40, 220);
       
         BuiltBlur blur = Builder.blur()
-          .size(new SizeState(150, 100))
-          .radius(new QuadRadiusState(12f))
-          .blurRadius(12f)
-          .smoothness(6f)
-          .color(new QuadColorState(Color.RED))
-          .build();
+            .size(new SizeState(150, 100))
+            .radius(new QuadRadiusState(12f))
+            .blurRadius(12f)
+            .smoothness(6f)
+            .color(new QuadColorState(Color.RED))
+            .build();
         blur.render(matrix, 140, 50);
       
         BuiltText text = Builder.text()
-          .font(BIKO_FONT.get())
-          .text("This is text render!")
-          .color(Color.WHITE)
-          .size(14f)
-          .thickness(0.05f)
-          .build();
+            .font(BIKO_FONT.get())
+            .text("This is text render!")
+            .color(Color.WHITE)
+            .size(14f)
+            .thickness(0.05f)
+            .build();
         text.render(matrix, 140, 180);
     }
 
