@@ -8,7 +8,7 @@ Simple system for rendering 2D objects in Minecraft 1.21. System supports basic 
 ``` java
 public final class MinecraftRenderEnhancer implements ModInitializer {
 
-    public static final String MOD_ID = "hre";
+    public static final String MOD_ID = "mre";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     private static final Supplier<MsdfFont> BIKO_FONT = Suppliers.memoize(() -> MsdfFont.builder().atlas("biko").data("biko").build());
   
