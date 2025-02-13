@@ -68,4 +68,4 @@ public final class MinecraftRenderEnhancer implements ModInitializer {
 
 }
 ```
-![](https://github.com/user-attachments/assets/0abb45c6-6167-4f16-a459-ec20bc1cc36a)
+![usage](https://github.com/user-attachments/assets/16c98afe-ed2e-4b4e-ae02-b0397322e66a)
