@@ -1,5 +1,11 @@
 # Minecraft-Render-Enhancer-2D-1.21
 Simple system for rendering 2D objects in Minecraft 1.21. System supports basic shapes, blur, msdf fonts and objects transformations with `MatrixStack`.
+## How to generate MSDF font (basics)
+- Get `.ttf` file of the font you need
+- Download last release of [generator](https://github.com/Chlumsky/msdf-atlas-gen) and [example](https://github.com/Chlumsky/msdf-atlas-gen)
+- Move all files in one folder
+- Edit font input file in `run.bat` and run it
+- Other generator options you can find in original repository
 ## Useful links
 - [About msdf fonts in Minecraft](https://yougame.biz/threads/301776/)
 - [Msdf-atlas-gen](https://github.com/Chlumsky/msdf-atlas-gen)
