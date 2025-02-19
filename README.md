@@ -2,7 +2,7 @@
 Simple system for rendering 2D objects in Minecraft 1.21. System supports basic shapes, blur, msdf fonts and objects transformations with `MatrixStack`.
 ## How to generate MSDF font (basics)
 - Get `.ttf` file of the font you need
-- Download last release of [generator](https://github.com/Chlumsky/msdf-atlas-gen) and [example](https://github.com/Chlumsky/msdf-atlas-gen)
+- Download last release of [generator](https://github.com/Chlumsky/msdf-atlas-gen) and [example](https://drive.google.com/file/d/1A-oywYiLUd2d72N-hJysZZfBMhrTBTVY/view?usp=drive_link)
 - Move all files in one folder
 - Edit font input file in `run.bat` and run it
 - Other generator options you can find in original repository
